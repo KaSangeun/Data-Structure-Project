@@ -4,7 +4,7 @@ Efficient route optimization for collecting river floating debris using Prim's A
 
 ## Problem Statement
 하천 부유 쓰레기 데이터를 수집하는 과정에서, 쓰레기가 특정 지점에 밀집되는 경향이 있다는 것을 발견하였다. <br/>
-During the process of collecting data on river-floating debris, we observed that waste tends to accumulate in specific locations. <br/><<br/>
+During the process of collecting data on river-floating debris, we observed that waste tends to accumulate in specific locations. <br/><br/>
 특히, 사람들이 자주 다니는 하천의 징검다리 주변이나 하천과 육지가 맞닿는 지점에 쓰레기가 집중되는 현상이 뚜렷하게 나타났다. <br/>
 Notably, trash was frequently found near stepping stones commonly used by pedestrians or along the contact points between riverbanks and the land. </br></br>
 이러한 지점을 중심으로 쓰레기를 수거한다면, 짧은 시간 안에 높은 효율을 낼 수 있을 것이라고 생각했다. <br/>
@@ -24,6 +24,9 @@ The following table shows the nearby rivers for each waste recovery facility. <b
 | 3 | 양천 자원회수시설</br>(Yangcheon Resource Recovery Facility) | 안양천(Anyangcheon), 목감천(Mokgamcheon), 도림천(Dorimcheon), 반포천(Banpocheon) |
 | 4 | 강남 자원회수시설</br>(Gangnam Resource Recovery Facility) | 반포천(Banpocheon), 양재천(Yangjaecheon), 탄천(Tancheon), 세곡천(Segokcheon), 중랑천(Jungnangcheon) |
 
+## Dataset
+수집한 하천 부유 쓰레기 데이터셋(Collected river floating debris datasets): [img dataset](https://drive.google.com/file/d/1z-x6vhtVxP-ty_-OBilf8du0lo-FkmGg/view?usp=sharing), [data.csv](https://github.com/KaSangeun/Data-Structure-Project/blob/main/data.csv) (공유용) <br/>
+하천 및 자원회수시설 관련 정보(Information on Rivers and Resource Recovery Facilities): [location_info.xlsx](https://github.com/KaSangeun/Data-Structure-Project/blob/main/location_info.xlsx)
 
 ## Solution 
 [Conditions] 
@@ -50,8 +53,8 @@ To represent the distances as integers, each value was multiplied by 100. <br/><
 ex. <br/>
 ![Image](https://github.com/user-attachments/assets/0de58847-7654-4842-9260-5211e5b3d53f)
 
-프림 알고리즘을 포함한 코드는 [이곳]()에서 확인할 수 있다. <br/>
-The full code, including Prim’s algorithm, can be found [here](웹사이트). <br/>
+프림 알고리즘을 포함한 코드는 [이곳](https://github.com/KaSangeun/Data-Structure-Project/blob/main/solution_code.cpp)에서 확인할 수 있다. <br/>
+The full code, including Prim’s algorithm, can be found [here](https://github.com/KaSangeun/Data-Structure-Project/blob/main/solution_code.cpp). <br/>
 
 ## Results
 [Zone 1]
