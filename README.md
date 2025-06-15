@@ -12,9 +12,10 @@ We hypothesized that prioritizing waste collection in these high-density areas c
 
 ## Approach
 서울시 내 4 개의 자원회수시설을 기준으로 각 자원회수시설별로 구역을 나누어 자원회수시설에서 시작하여 인근 하천의 징검다리와 그 주변을 모두 지나면서 쓰레기를 수거할 수 있는 가장 빠른 경로를 탐색하고자 한다. <br/>
-Seoul was divided into four zones, each centered around one of the city’s four resource recovery facilities. In each zone, we aimed to find the most efficient route starting from the assigned facility and passing through nearby rivers—focusing on stepping stones and their surrounding areas—to collect floating debris more effectively. <br/>
+Seoul was divided into four zones, each centered around one of the city’s four resource recovery facilities. In each zone, we aimed to find the most efficient route starting from the assigned facility and passing through nearby rivers—focusing on stepping stones and their surrounding areas—to collect floating debris more effectively. <br/><br/>
+![Image](https://github.com/user-attachments/assets/caad097f-081b-40c0-ac0e-205db393cfb4)
 
-각 자원회수시설별 하천은 아래 표와 같다. </br>
+각 자원회수시설별 가까운 하천은 아래 표와 같다. </br>
 The following table shows the nearby rivers for each waste recovery facility. <br/>
 | 구역<br/>(Zone)       | 자원회수시설<br/>(Resource Recovery Facility)       | 인근 하천<br/>(Nearby Rivers)                                                 |
 |--------------------------------------|----------------------------------|----------------------------------------------------------------|
@@ -46,30 +47,41 @@ Based on the calculated weights, we created a .txt file for each zone containi
 거리는 정수로 나타내기 위해 100을 곱한 값으로 표기하였다. <br/>
 To represent the distances as integers, each value was multiplied by 100. <br/><br/>
 
+ex. <br/>
+![Image](https://github.com/user-attachments/assets/0de58847-7654-4842-9260-5211e5b3d53f)
+
 프림 알고리즘을 포함한 코드는 [이곳]()에서 확인할 수 있다. <br/>
 The full code, including Prim’s algorithm, can be found [here](웹사이트). <br/>
 
 ## Results
 [Zone 1]
+![Image](https://github.com/user-attachments/assets/f3a1ff25-e386-4a09-9730-b36825e671d8)
 - **🧭 최소 거리 합(Total Distance)**: 15.86km
 - **🗺️ 경로(Route)**: <br/>
 마포 자원회수시설 → 불광천 두번째 영역 → 불광천 세번째 영역 → 불광천 첫번째 영역 → 홍제천 첫번째 영역 → 홍제천 두번째 영역 → 홍제천 세번째 영역 → 청계천 첫번째 영역 → 구파발천 세번째 영역 → 구파발천 두번째 영역 → 구파발천 세번째 영역 <br/>
 Mapo Resource Recovery Facility → Bulgwangcheon (2nd → 3rd → 1st location) → Hongjecheon (1st → 2nd → 3rd location) → Cheonggyecheon (1st location) → Gupabalcheon (3rd → 2nd → 1st location) <br/>
 
 [Zone 2]
+![Image](https://github.com/user-attachments/assets/65addddc-032f-4ebc-894b-3c6236341a92)
 - **🧭 최소 거리 합(Total Distance)**: 19.81km
 - **🗺️ 경로(Route)**: <br/>
 노원 지원회수시설 → 묵동천 두번째 영역 → 묵동천 세번째 영역 → 묵동천 첫번째 영역 → 중랑천 네번째 영역 → 정릉천 두번째 영역 → 정릉천 첫번째 영역 → 성북천 여섯번째 영역 → 성북천 다섯번째 영역 → 성북천 네번째 영역 → 성북천 세번째 영역 → 성북천 두번째 영역 → 성북천 첫번째 영역 → 청계천 두번째 영역 → 청계천 세번째 영역 <br/>
 Nowon Resource Recovery Facility → Mokdongcheon (2nd → 3rd → 1st location) → Jungnangcheon (4th location) → Jeongneungcheon (2nd → 1st location) → Seongbukcheon (6th → 5th → 4th → 3rd → 2nd → 1st location) → Cheonggyecheon (2nd → 3rd location) <br/>
 
 [Zone 3]
+![Image](https://github.com/user-attachments/assets/a81427da-8fb7-4d0b-9838-e2a7e29894ce)
 - **🧭 최소 거리 합(Total Distance)**: 20.99km
 - **🗺️ 경로(Route)**: <br/>
 양천 자원회수시설 → 안양천 첫번째 영역 → 안양천 두번째 영역 → 안양천 세번째 영역 → 안양천 네번째 영역 → 도림천 첫번째 영역 → 도림천 두번째 영역 → 도림천 세번째 영역 → 목감천 두번째 영역 → 목감천 첫번째 영역 → 반포천 첫번째 영역 → 반포천 두번째 영역
 Yangcheon Resource Recovery Facility → Anyangcheon (1st → 2nd → 3rd → 4th) → Dorimcheon (1st → 2nd → 3rd) → Mokgamcheon (2nd → 1st) → Banpocheon (1st → 2nd)
 
 [Zone 4]
+![Image](https://github.com/user-attachments/assets/2d888e07-5542-4c66-b632-f2573b9ec646)
 - **🧭 최소 거리 합(Total Distance)**: 23.98km
 - **🗺️ 경로(Route)**: <br/>
 강남 자원회수시설 → 탄천 첫번째 징검다리 → 양재천 다섯번째 징검다리 → 양재천 네번째 징검다리 → 양재천 세번째 징검다리 → 양재천 두번째 징검다리 → 양재천 첫번째 징검다리 → 세곡천 네번째 징검다리 → 세곡천 세번째 징검다리 → 세곡천 두번째 징검다리 → 세곡천 첫번째 징검다리 → 반포천 세번째 징검다리 → 중랑천 첫번째 징검다리 → 중랑천 두번째 징검다리 → 중랑천 세번째 징검다리
 Gangnam Resource Recovery Facility → Tancheon (1st) → Yangjaecheon (5th → 4th → 3rd → 2nd → 1st) → Segokcheon (4th → 3rd → 2nd → 1st) → Banpocheon (3rd) → Jungnangcheon (1st → 2nd → 3rd)
+
+**💡 자세한 사항은 아래 블로그에서 확인할 수 있다. (Further details can be found in the blog post below.) <br/>**
+👉 [Mid Project](https://velog.io/@clover88/%EC%A4%91%EA%B0%84-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8) 
+[Final Project](https://velog.io/@clover88/%EA%B8%B0%EB%A7%90-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8) 
