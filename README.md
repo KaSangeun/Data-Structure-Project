@@ -26,7 +26,7 @@ The following table shows the nearby rivers for each waste recovery facility. <b
 
 ## Dataset
 수집한 하천 부유 쓰레기 데이터셋(Collected river floating debris datasets): [img dataset](https://drive.google.com/file/d/1z-x6vhtVxP-ty_-OBilf8du0lo-FkmGg/view?usp=sharing), [data.csv](https://github.com/KaSangeun/Data-Structure-Project/blob/main/data.csv) (공유용) <br/>
-하천 및 자원회수시설 관련 정보(Information on Rivers and Resource Recovery Facilities): [location_info.xlsx](https://github.com/KaSangeun/Data-Structure-Project/blob/main/location_info.xlsx)
+하천 및 자원회수시설 관련 정보(Information on Rivers and Resource Recovery Facilities): [location_info.xlsx](https://github.com/KaSangeun/Data-Structure-Project/blob/main/location_info.csv)
 
 ## Solution 
 [Conditions] 
